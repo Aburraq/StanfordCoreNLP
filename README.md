@@ -18,8 +18,7 @@ The `Pipeline` class is designed to create an instance of Stanford CoreNLP with 
 To utilize this pipeline:
 1. Ensure you have the Stanford CoreNLP library configured in your project.
 2. Add Stanford CoreNLP as a dependency. You can do this by including the following Maven dependency in your project's `pom.xml` file:
-   
-   ```xml
+
 <dependency>
     <groupId>edu.stanford.nlp</groupId>
     <artifactId>stanford-corenlp</artifactId>
@@ -29,16 +28,14 @@ To utilize this pipeline:
 4. Import the `Pipeline` class into your Java application.
 5. Access the pipeline instance using the `getPipeline()` method to perform NLP tasks.
 
-```java
+
 // Example usage in your Java code
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 
 public class YourNLPApplication {
-
     public static void main(String[] args) {
         // Access the pipeline instance
         StanfordCoreNLP pipeline = Pipeline.getPipeline();
-
         // Use the pipeline for NLP operations
         // ... (perform NLP tasks using the pipeline)
     }
